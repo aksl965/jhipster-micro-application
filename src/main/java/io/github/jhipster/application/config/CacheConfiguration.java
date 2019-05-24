@@ -43,6 +43,13 @@ public class CacheConfiguration {
             createCache(cm, io.github.jhipster.application.domain.User.class.getName());
             createCache(cm, io.github.jhipster.application.domain.Authority.class.getName());
             createCache(cm, io.github.jhipster.application.domain.User.class.getName() + ".authorities");
+            createCache(cm, io.github.jhipster.application.domain.Patient.class.getName());
+            createCache(cm, io.github.jhipster.application.domain.Patient.class.getName() + ".claims");
+            createCache(cm, io.github.jhipster.application.domain.Patient.class.getName() + ".enrollments");
+            createCache(cm, io.github.jhipster.application.domain.Enrollment.class.getName());
+            createCache(cm, io.github.jhipster.application.domain.Claim.class.getName());
+            createCache(cm, io.github.jhipster.application.domain.Adjudication.class.getName());
+            createCache(cm, io.github.jhipster.application.domain.Adjudication.class.getName() + ".claims");
             // jhipster-needle-ehcache-add-entry
         };
     }
